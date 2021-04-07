@@ -64,7 +64,7 @@ describe('DivisibleByService', () => {
   });
 
   it('message = "76"', () => {
-    expect(service.getMessageIsDivisible(77)).toEqual('76');
+    expect(service.getMessageIsDivisible(76)).toEqual('76');
   });
 
 });
