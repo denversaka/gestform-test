@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
 import { DivisibleByService } from './divisible-by.service';
-import { IRangeDivisible } from '../models/i-range-divisible';
 
 describe('DivisibleByService', () => {
   let service: DivisibleByService;
@@ -56,7 +55,7 @@ describe('DivisibleByService', () => {
   });
 
   it('message = "GestForm"', () => {
-    expect(service.getMessageIsDivisible(35)).toEqual('GestForm');
+    expect(service.getMessageIsDivisible(15)).toEqual('GestForm');
   });
 
   it('message = "112"', () => {
