@@ -34,7 +34,8 @@ export class DivisibleByService {
    * @returns string - le message
    */
   getMessageIsDivisible(value: number): string {
-    return this.isGest(value) + this.isForm(value);
+    const str = this.isGest(value) + this.isForm(value);
+    return (str)? str : value.toString();
   }
 
   /**

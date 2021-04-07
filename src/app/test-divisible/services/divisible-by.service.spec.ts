@@ -55,11 +55,16 @@ describe('DivisibleByService', () => {
     expect(service.getMessageIsDivisible(35)).toEqual('Form');
   });
 
-  it('message = ""', () => {
-    expect(service.getMessageIsDivisible(112)).toEqual('');
+  it('message = "GestForm"', () => {
+    expect(service.getMessageIsDivisible(35)).toEqual('GestForm');
   });
 
-  it('message = ""', () => {
-    expect(service.getMessageIsDivisible(77)).toEqual('');
+  it('message = "112"', () => {
+    expect(service.getMessageIsDivisible(112)).toEqual('112')
   });
+
+  it('message = "76"', () => {
+    expect(service.getMessageIsDivisible(77)).toEqual('76');
+  });
+
 });

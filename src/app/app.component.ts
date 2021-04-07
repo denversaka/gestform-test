@@ -8,5 +8,5 @@ import { IRangeDivisible } from './test-divisible/models/i-range-divisible';
 })
 export class AppComponent {
   title = 'gest-form-test';
-  range: IRangeDivisible = {begin: 0, end: 10};
+  range: IRangeDivisible = {begin: -1000, end: 1000};
 }
